@@ -1,0 +1,7 @@
+{
+  "name": "friendly_neighborhood",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
