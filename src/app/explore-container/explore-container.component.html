@@ -3,6 +3,8 @@
     <ion-thumbnail>
       <img [src]="type == 'activities' ? '/assets/img/miles-logo.png': '/assets/img/crime-ex.png'" />
     </ion-thumbnail>
-    <ion-label>{{ item }}</ion-label>
+    <ion-label>{{ item.label }}</ion-label>
+    <hr class="vertical">
+    <span class="content-right">{{ item.value }} M</span>
   </ion-item>
 </div>

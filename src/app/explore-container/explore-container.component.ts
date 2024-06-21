@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+// Type
+import type { Activities } from 'src/types/activities';
 
 @Component({
   selector: 'app-explore-container',
@@ -7,7 +9,7 @@ import { Component, Input } from '@angular/core';
 })
 export class ExploreContainerComponent {
 
-  @Input() items?: string[];
+  @Input() items?: Activities[];
   @Input() type: string = 'activity';
 
 }
