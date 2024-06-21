@@ -1,10 +1,14 @@
-<div id="container">
-  <ion-item *ngFor="let item of items">
-    <ion-thumbnail>
-      <img [src]="type == 'activities' ? '/assets/img/miles-logo.png': '/assets/img/crime-ex.png'" />
-    </ion-thumbnail>
-    <ion-label>{{ item.label }}</ion-label>
-    <hr class="vertical">
-    <span class="content-right">{{ item.value }} M</span>
-  </ion-item>
-</div>
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        <ion-thumbnail>
+          <img [src]="type == 'activities' ? '/assets/img/miles-logo.png': '/assets/img/crime-ex.png'" />
+        </ion-thumbnail>
+        <ion-label>{{ item.label }}</ion-label>
+        <hr class="vertical">
+        <span class="content-right">{{ item.value }} M</span>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
